@@ -6,7 +6,7 @@ import numpy as np
 model = joblib.load('skincare_clean_model.pkl')
 
 st.title("🧴 Skincare Product Analyzer")
-st.write("ادخلي تفاصيل المنتج للتنبؤ بالفئة الاقتصادية بناءً على المكونات والسعر:")
+st.write("Enter product details to predict the economic tier based on ingredients and price.")
 
 price = st.number_input("سعر المنتج ($)", min_value=1.0, max_value=300.0, value=25.0)
 ingredient_count = st.number_input("عدد المكونات في المنتج", min_value=1, max_value=100, value=12)
